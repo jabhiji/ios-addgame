@@ -34,4 +34,14 @@
 - (IBAction)submit:(id)sender {
     NSLog(@"You clicked submit");
 }
+
+- (void) generate
+{
+    int a = 1 + arc4random()%9;
+    int b = 1 + arc4random()%9;
+    int sum = a + b;
+    _label.text = [NSString stringWithFormat:@"%d + %d = ",a,b];
+    _label.tag = sum;
+}
+
 @end
