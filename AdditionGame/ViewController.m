@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (retain, nonatomic) IBOutlet UILabel *label;
+@property (retain, nonatomic) IBOutlet UITextField *answer;
+- (IBAction)submit:(id)sender;
 
 @end
 
@@ -16,6 +19,8 @@
 
 - (void)viewDidLoad
 {
+    [self setLabel:nil];
+    [self setAnswer:nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -26,4 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)submit:(id)sender {
+    NSLog(@"You clicked submit");
+}
 @end
