@@ -456,6 +456,7 @@
 				1E2990EA1909B08B00DEAD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E2990EB1909B08B00DEAD8F /* Build configuration list for PBXNativeTarget "AdditionGameTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				1E2990ED1909B08B00DEAD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
