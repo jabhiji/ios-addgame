@@ -54,8 +54,8 @@
 - (void) generate
 {
     answer.text = [NSString stringWithFormat:@""];
-    int a = 1 + arc4random()%9;
-    int b = 1 + arc4random()%9;
+    int a = -5 + arc4random()%10;
+    int b = -5 + arc4random()%10;
     int sum = a + b;
     label.text = [NSString stringWithFormat:@"%d + %d = ",a,b];
     label.tag = sum;
