@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (retain, nonatomic) IBOutlet UILabel *label;
 @property (retain, nonatomic) IBOutlet UITextField *answer;
+@property (retain, nonatomic) IBOutlet UILabel *result;
 - (IBAction)submit:(id)sender;
 - (void) generate;
 @end
@@ -19,6 +20,7 @@
 
 @synthesize label;
 @synthesize answer;
+@synthesize result;
 
 - (void)viewDidLoad
 {
@@ -34,21 +36,24 @@
     // Dispose of any resources that can be recreated.
     [self setLabel:nil];
     [self setAnswer:nil];
+    [self setResult:nil];
 }
 
 - (IBAction)submit:(id)sender {
-    NSLog(@"You clicked submit");
     int num = [answer.text intValue];
     if (num == label.tag) {
         NSLog(@"CORRECT");
+        result.text = [NSString stringWithFormat:@"CORRECT"];
         [self generate];
     } else {
         NSLog(@"WRONG! TRY AGAIN");
+        result.text = [NSString stringWithFormat:@"WRONG! TRY AGAIN"];
     }
 }
 
 - (void) generate
 {
+    answer.text = [NSString stringWithFormat:@""];
     int a = 1 + arc4random()%9;
     int b = 1 + arc4random()%9;
     int sum = a + b;
