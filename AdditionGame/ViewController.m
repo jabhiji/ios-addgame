@@ -47,6 +47,7 @@
         [self generate];
     } else {
         NSLog(@"WRONG! TRY AGAIN");
+        answer.text = [NSString stringWithFormat:@""];
         result.text = [NSString stringWithFormat:@"WRONG! TRY AGAIN"];
     }
 }
