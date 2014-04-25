@@ -21,6 +21,7 @@
 		1E2990DB1909B08B00DEAD8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2990BD1909B08B00DEAD8F /* UIKit.framework */; };
 		1E2990E31909B08B00DEAD8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E2990E11909B08B00DEAD8F /* InfoPlist.strings */; };
 		1E2990E51909B08B00DEAD8F /* AdditionGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2990E41909B08B00DEAD8F /* AdditionGameTests.m */; };
+		1E890164190A856C0056BC58 /* submitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E890163190A856C0056BC58 /* submitButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1E2990E01909B08B00DEAD8F /* AdditionGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdditionGameTests-Info.plist"; sourceTree = "<group>"; };
 		1E2990E21909B08B00DEAD8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E2990E41909B08B00DEAD8F /* AdditionGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionGameTests.m; sourceTree = "<group>"; };
+		1E890163190A856C0056BC58 /* submitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submitButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		1E2990C01909B08B00DEAD8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E890163190A856C0056BC58 /* submitButton.png */,
 				1E2990C11909B08B00DEAD8F /* AdditionGame-Info.plist */,
 				1E2990C21909B08B00DEAD8F /* InfoPlist.strings */,
 				1E2990C51909B08B00DEAD8F /* main.m */,
@@ -231,6 +234,7 @@
 				1E2990D21909B08B00DEAD8F /* Images.xcassets in Resources */,
 				1E2990C41909B08B00DEAD8F /* InfoPlist.strings in Resources */,
 				1E2990CD1909B08B00DEAD8F /* Main.storyboard in Resources */,
+				1E890164190A856C0056BC58 /* submitButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
