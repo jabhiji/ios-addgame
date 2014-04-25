@@ -1,0 +1,38 @@
+ios-addgame
+===========
+
+This is a Xcode 5.1.1 project for a simple "add the numbers" game, based on the awesome book "Tap, Move, Shake" by Todd Moore.
+
+
+Note that there are some minor changes from the code described in the book:
+
+1.
+Use @synthesize to create getter and setter functions for the properties in your implementation file
+
+@implementation ViewController
+
+@synthesize label;
+@synthesize answer;
+@synthesize result;
+
+.
+.
+.
+.
+@end
+
+otherwise the code will not be able to access variable properties using the "." notation.
+
+2.
+For avoiding memory leaks by disposing off resources that can be recreated, the 
+
+- (void) viewDidUnload 
+
+method has been deprecated and you should use 
+
+- (void) didReceiveMemoryWarning
+
+instead.
+
+3.
+The alerts used in the book have been replaced by an additional label at the bottom.
